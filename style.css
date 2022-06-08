@@ -1,0 +1,12 @@
+.all-todos {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row row-reverse;
+
+}
+
+.plus {
+    cursor: pointer;
+}
+
