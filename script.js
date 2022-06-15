@@ -6,7 +6,6 @@
 const allTodosSection = document.querySelector('.all-todos');
 const plus = document.querySelector('.plus');
 
-
 plus.addEventListener('click', (e)=> {
 
     const newTaskForm = document.createElement(`form`);
@@ -58,7 +57,6 @@ plus.addEventListener('click', (e)=> {
 
 window.onload = () => {
     const x = localStorage.getItem('textareaValue');
-    // document.querySelector('.textarea').value.innerHTML = x;
     console.log(x);
 
     const newTaskForm = document.createElement(`form`);
@@ -76,7 +74,6 @@ window.onload = () => {
     textarea.setAttribute('class', 'textarea');
     newTaskForm.appendChild(textarea);
     textarea.value = x;
-
 
     const icons = document.createElement('div');
     icons.setAttribute('class', 'icons');
